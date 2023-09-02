@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz@9..144&family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Age calculator app</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form class="containerItem" id="date_form" action="/action_page.php">
+        <!--  <div class="inputBorder"> -->
+        <div class="date_inputs">
+          <div class="date_block" id="dayDiv">
+            <label for="day">Day</label>
+            <input type="number" id="day" name="day" placeholder="DD" />
+            <!-- <p>Error</p> -->
+          </div>
+          <div class="date_block" id="monthDiv">
+            <label for="month">Month</label>
+            <input type="number" id="month" name="month" placeholder="MM" />
+            <!-- <p>Error</p> -->
+          </div>
+          <div class="date_block" id="yearDiv">
+            <label for="Year">Year</label>
+            <input type="number " id="year" name="Year" placeholder="YYYY" />
+            <!-- <p>Error</p> -->
+          </div>
+        </div>
+        <div class="submitDiv">
+          <div>
+            <button
+              type="submit"
+              class="submit_btn"
+              id="submitBtn"
+              value="Submit"
+            >
+              <img src="./assets/images/icon-arrow.svg" alt="icon" />
+            </button>
+          </div>
+        </div>
+      </form>
+      <div class="containerItem resultados">
+        <div class="dateResultado">
+          <h1>
+            <span class="convertedResults" id="convertedYears">--</span> years
+          </h1>
+        </div>
+
+        <div class="dateResultado">
+          <h1>
+            <span class="convertedResults" id="convertedMonths">--</span> months
+          </h1>
+        </div>
+
+        <div class="dateResultado">
+          <h1>
+            <span class="convertedResults" id="convertedDays">--</span> days
+          </h1>
+        </div>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
